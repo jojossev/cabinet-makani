@@ -59,25 +59,26 @@
                     <h2>Formulaire de Contact</h2>
                     <div class="card mt-3">
                         <div class="card-body">
-                            <form id="contactForm" class="needs-validation" novalidate>
+                            <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate>
+                                <input type="hidden" name="form-name" value="contact">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Nom complet *</label>
-                                    <input type="text" class="form-control" id="name" required>
+                                    <input type="text" class="form-control" id="name" name="name" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email *</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                    <input type="email" class="form-control" id="email" name="email" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="phone" class="form-label">Téléphone</label>
-                                    <input type="tel" class="form-control" id="phone">
+                                    <input type="tel" class="form-control" id="phone" name="phone">
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="subject" class="form-label">Sujet *</label>
-                                    <select class="form-select" id="subject" required>
+                                    <select class="form-select" id="subject" name="subject" required>
                                         <option value="">Choisissez un sujet</option>
                                         <option value="consultation">Demande de consultation</option>
                                         <option value="conseil">Conseil juridique</option>
@@ -88,11 +89,11 @@
 
                                 <div class="mb-3">
                                     <label for="message" class="form-label">Message *</label>
-                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                                 </div>
 
                                 <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="privacy" required>
+                                    <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
                                     <label class="form-check-label" for="privacy">
                                         J'accepte que mes données soient traitées conformément à la politique de confidentialité
                                     </label>

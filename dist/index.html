@@ -47,6 +47,51 @@
             </div>
         </section>
 
+        <section class="appointment-form my-5">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Prendre un rendez-vous</h3>
+                    <form name="appointment" method="POST" data-netlify="true" class="needs-validation" novalidate>
+                        <input type="hidden" name="form-name" value="appointment">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Nom complet *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Téléphone *</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="date" class="form-label">Date souhaitée *</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service souhaité *</label>
+                            <select class="form-select" id="service" name="service" required>
+                                <option value="">Choisissez un service</option>
+                                <option value="consultation">Consultation juridique</option>
+                                <option value="conseil">Conseil juridique</option>
+                                <option value="avis">Avis juridique</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message (facultatif)</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Demander un rendez-vous</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
         <section class="contact-info">
             <h3>Contactez-nous</h3>
             <p>Avenue Funa n°19, Quartier Barumbu<br>
